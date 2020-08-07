@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <label style="margin: 10px;">Enter the Principal Amount: <input type='number' id="p"" style="margin: 10px;"/></label><br/>
+        <label style="margin: 10px;">Enter the Rate: <input type='number' id="r"" style="margin: 10px;"></label><br/>
+        <label style="margin: 10px;">Enter the time: <input type='number' id="t"" style="margin: 10px;"></label><br/>
+
+
+        <input type='submit' value="Simple Interest" onclick="interest()" style="margin: 10px;"/>
+        <p id="output"></p>
+
+<script>
+
+
+
+   function interest(){
+
+var p=parseInt(document.getElementById("p").value);
+var r=parseInt(document.getElementById("r").value);
+var t=parseInt(document.getElementById("t").value);
+
+document.getElementById("output").innerHTML="Simple Interest is: "+((p*r*t)/100).toString();
+
+   }
+
+</script>
+
+    </body>
+</html>

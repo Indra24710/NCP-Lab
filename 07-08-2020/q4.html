@@ -1,0 +1,33 @@
+<html>
+    <body>
+        <label>Enter the number: <input type='number' id="number""></label>
+        <input type='submit' onclick="fibonacci()"/>
+        <p id="output"></p>
+
+<script>
+
+    function fibonacci(){
+    var n= parseInt(document.getElementById('number').value);
+
+    document.getElementById("output").innerHTML="0"
+    document.getElementById("output").innerHTML="1"
+    document.getElementById("output").innerHTML="1"
+
+    var index,first,second,next;
+    first=1;
+    second=1;
+    for (index=2;index<n;index++){
+        document.write("output: "+(first+second).toString())
+        document.write("<br/>")
+        next= first+second;
+        first=second;
+        second=next ;
+    }
+
+
+    }
+
+</script>
+
+    </body>
+</html>

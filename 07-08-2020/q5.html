@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <label>Enter the name: <input type='text' id="name""></label>
+        <input type='button' value="Enter" onclick="add_name()"/>
+
+        <input type='submit' value="Sort" onclick="sort()"/>
+        <p id="output"></p>
+
+<script>
+var cars= new Array();
+   function add_name(){
+
+    val1= document.getElementById("name").value;
+    cars.push(val1);
+    document.getElementById("output").innerHTML=cars;
+
+   }
+
+   function sort(){
+            cars=cars.sort();
+            document.getElementById("output").innerHTML="Sorted list is: "+cars;
+
+
+   }
+
+</script>
+
+    </body>
+</html>

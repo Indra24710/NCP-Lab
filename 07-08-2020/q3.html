@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           
+    <script>
+        function enlarge() {
+var largeImage = document.getElementById('change');
+largeImage.style.width=400+"px";
+largeImage.style.height=400+"px";
+var url=largeImage.getAttribute('src');
+window.open(url,'Image','width=largeImage.stylewidth,height=largeImage.style.height');
+}
+    </script>
+</head>
+
+<body>
+        <a target="_blank"><img id='change' src="lady-gaga-vector.jpg" onmouseout="document.getElementById('name').innerHTML =''"
+            onmouseover="document.getElementById('name').innerHTML ='Lady gaga'"onclick="enlarge()" style="width: 300px; height: 300px;"  />
+        </a>
+        <p id='name'></p>
+
+
+ 
+        </body>
+
+</html>
