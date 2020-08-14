@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>
+            date validation
+        </title>
+        <script>
+            function validate(){
+                var date=document.getElementById('date').value;
+                window.alert(date);
+                date=date.split('/');
+                if (date.length!=3){
+                    alert('invalid format');
+
+                }else{
+                    var day=parseInt(date[0]);
+                    var month=parseInt(date[1]);
+                    var year=parseInt(date[2]);
+                    li1=[1,3,5,7,8,10,12];
+                    li2=[4,6,9,11];
+                    if (year%4==0){
+
+                        if (year%100==0){
+                            if (year%400==0){
+                                li3=[29];
+                            }else{
+                                    li3=[28];
+                            }
+                        }else{
+                            li3=[29];
+
+                        }
+
+                    }else{
+                        li3=[28];
+                    }
+
+                    if ((month<=12)&&(month>=1)){
+                    var limit=0;
+                    if (li1.includes(month,0)){
+                        limit=31;
+                    }else{
+                        if (li2.includes(month,0)){
+                            limit=30;
+                        }else{
+                            limit=li3[0];
+                        }
+                    }
+                    if (day<=limit){
+                        alert('valid date');
+                    }else{
+                        alert('invalid date');
+                    }
+                    }else{
+                        alert('invalid');
+                    }
+
+
+
+
+
+
+
+
+
+                }
+            }
+        </script>
+    </head>
+    <body>
+       
+        <form onsubmit="validate()">
+        <h3>Enter the date to be validated</h3>
+        <input type='text' id='date' placeholder="format: dd/mm/yyyy" />
+        <input type='submit' onsubmit="validate()"/>
+        </form>
+    </body>
+</html>

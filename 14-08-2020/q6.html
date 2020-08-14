@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>
+Assigngrade
+        </title>
+    </head>
+    <body>
+
+    <script>
+       
+       var i=0;
+       for(i=0;i<5;i++){
+           var j=60;
+           for(j=60;j<=100;j++){
+            assigngrade(j);
+           }
+       }
+
+       function assigngrade(inp){
+        if(inp>=90){
+            document.write(inp)
+                document.write("For ");
+                document.write(inp);
+                document.write(" you got an A")
+
+        }
+        else if (inp>=80){
+            document.write("For ");
+                document.write(inp);
+                document.write(" you got an B")
+        }
+        else if (inp>=70){
+            document.write("For ");
+                document.write(inp);
+                document.write(" you got an C")
+        }else if(inp>=60){
+            document.write("For ");
+                document.write(inp);
+                document.write(" you got an D")
+
+        }
+        document.write('<br/>');
+
+       }
+
+
+
+    </script>
+    </body>
+</html>
