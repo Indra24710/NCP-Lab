@@ -1,0 +1,31 @@
+<html>
+    <head>
+<title>
+    Clock
+</title>
+<script>
+    list=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
+    var date=new Date()
+    var year=date.getFullYear()
+    var month=date.getMonth()
+    var day=date.getDay()
+    document.querySelector('body')
+    document.write(list[day])
+    document.write('<br/>')
+    document.write(date.getHours())
+    document.write(':')
+    document.write(" ")
+    document.write(date.getMinutes())
+    document.write(':')
+    document.write(" ")
+    document.write(date.getSeconds())
+    document.write('<br/>')
+    var date= date.getUTCDate()+"-"+date.getUTCMonth()+"-"+date.getUTCFullYear()
+    document.write(date)
+</script>    
+</head>
+<body style="vertical-align: middle; text-align: center;">
+
+</body>
+    
+</html>

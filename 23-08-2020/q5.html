@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>
+            players
+        </title>
+        <script>
+            document.write('<h4>Player Frequencies</h4>')
+            document.write('<br/>')
+
+            player=['Umpire','Batter','Bowler','Fielder','Wicket-keeper']
+            li=[]
+            var i=0;
+            while (i<10){
+                li.push(Math.floor((Math.random()*10)+1))
+                i+=1
+            }
+            document.write(li)
+            player_freq=[0,0,0,0,0]
+
+            i=0
+            while (i<li.length){
+                if (li[i]<=5){
+                player_freq[li[i]-1]+=1}
+                else{
+                    player_freq[(li[i]/2)-1]+=1
+                }
+                i+=1
+            }
+
+            i=0
+            while(i<player_freq.length){
+                document.write(player[i])
+                document.write(':')
+                document.write(player_freq[i])
+                document.write('<br/>')
+                i+=1
+            }
+            document.write('<br/>')
+
+        </script>
+<style>
+    img{
+        height:100px;
+        width: 100px;
+    }
+</style>    
+</head>
+    <body>
+
+            <h3>Umpire             <img src='umpire.png' />
+            </h3>
+            <h3>Batter            <img src='batter.jpg'/>
+            </h3>
+            <h3>Bowler        <img src='bowler.png'/>
+            </h3>
+            <h3>Fielder             <img src='fielder.png'/>
+            </h3>
+            <h3>Wicket-keeper            <img src='wicket_keeper.png'/>
+            </h3>
+
+
+    </body>
+</html>

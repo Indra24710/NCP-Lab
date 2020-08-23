@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>
+            table of contents
+        </title>
+    </head>
+    <script>
+        var list=[];
+        var page=[];
+        function add_list(){
+            list.push(document.getElementById('list_entry').value);
+            page.push(document.getElementById('page').value);
+            document.getElementById('list_entry').value=''
+            document.getElementById('page').value=''
+        }
+
+        function toc(){
+            var i=0;
+            while(i<list.length){
+                document.write(list[i])
+                var j=0;
+                while (j<(20-list[i].length)){
+                    document.write('.')
+                j+=1
+                }
+                document.write(page[i])
+                document.write('<br/>')
+                i+=1
+            }
+        }
+
+    </script>
+<body>
+    <label>Enter the chapter name <input type='text' id='list_entry'/></label><br/>
+    <label>Enter the chapter page no <input type='text' id='page'/></label><br/>
+<input type='button' value='add to list' onclick="add_list()"/><br/>
+<input type='button' value='generate table of content' onclick="toc()"/>
+</body>
+</html>

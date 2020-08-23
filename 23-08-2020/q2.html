@@ -1,16 +1,29 @@
 <html>
     <head>
         <title>
-            date validation
+            Validate date
         </title>
-  
+        <style> 
+
+            input{
+                margin:10px;
+                border-radius: 10px;
+            }
+            body{
+                text-align: center;
+                align-content: center;
+                justify-items: center;
+            }
+              
+     
+            </style>
         <script>
-            function validate(){
-                var date=document.getElementById('date').value;
-                window.alert(date);
-                date=date.split('/');
+          
+          function validate_date(){
+            var date=document.getElementById('date').value;
+                date=date.split('-');
                 if (date.length!=3){
-                    alert('invalid format');
+                    alert('invalid date');
 
                 }else{
                     var day=parseInt(date[0]);
@@ -18,6 +31,9 @@
                     var year=parseInt(date[2]);
                     li1=[1,3,5,7,8,10,12];
                     li2=[4,6,9,11];
+                    var curr_year= new Date();
+                    curr_year=curr_year.getFullYear();
+                    if (year<curr_year){
                     if (year%4==0){
 
                         if (year%100==0){
@@ -52,7 +68,9 @@
                         alert('invalid date');
                     }
                     }else{
-                        alert('invalid');
+                        alert('invalid date');
+                    }}else{
+                        alert('invalid date');
                     }
 
 
@@ -63,16 +81,15 @@
 
 
 
-                }
-            }
+
+          }}
+
+            
         </script>
     </head>
     <body>
-       
-        <form onsubmit="validate()">
-        <h3>Enter the date to be validated</h3>
-        <input type='text' id='date' placeholder="format: dd/mm/yyyy" />
-        <input type='submit' onsubmit="validate()"/>
-        </form>
+        <label>Enter the Date <input type='text' id='date' placeholder="DD-MM-YYYY"/></label><br/>
+        <input type='button' value='generate' onclick="validate_date()"/>
+
     </body>
 </html>
