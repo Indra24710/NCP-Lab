@@ -1,0 +1,62 @@
+label{
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+input{
+    margin: 20px;
+    height: 30px;
+    border-radius: 15px;
+    
+
+}
+span{
+    color: red;
+}
+
+select{
+    margin: 20px;
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    
+}
+
+body{
+    display: flexbox;
+    background-color:#ebedee;
+    margin: 0;
+}
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #2a5298;
+    padding: 20px;
+    padding-left: 0px;
+    color:whitesmoke;
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid black;
+    margin: 10px;
+
+}
+
+.address{
+    width: 50%;
+    height: 35px;
+    border-radius: 15px;
+}
+
+.submit{
+    text-align: center;
+}
+
+.submit-button{
+width: 100px;
+height: 40px;
+background-color: green;
+color: white;
+}

@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>
+            HTML Form
+        </title>
+        <link rel="stylesheet" href='q2.css'/>
+        <script src="q2.js"></script>
+    </head>
+    <body>
+        <form >
+            <h1>User Bio</h1>
+            <h3>User Details</h3>
+            <label>First Name <span>*</span><input type='text' id='firstname'/></label>
+            <label>Middle Name<input type='text'/></label>
+            <label>Last Name <span>*</span><input type='text' id='lastname'/></label>
+            <br/>
+            
+            <label>Address Line 1 <span>*</span><input type='text' class="address" id='adline1'/></label>
+            <br/>
+            <label>Address Line 2 <input type='text'class="address"/></label>
+            <br/>
+            <label>City<span>*</span><select id='city'></select></label>
+            <label>State<span>*</span> <select id='state'</select></label>
+            <label>Country<span>*</span> <select id='country'></select></label>
+            <label>Zipcode<span>*</span> <input type='number' id='zip'/></label>
+            
+            <h3>Parent/Guardian Details</h3>
+            <label>First Name<span>*</span><input type='text' id='pr_first_name'/></label>
+            <label>Middle Name<input type='text'/></label>
+            <label>Last Name<span>*</span><input type='text'id='pr_last_name'/></label>
+            <br/>
+            <label>Email Id<span>*</span> <input type='text'/>@<input type='text' id='email'></label> 
+            <br/>
+            <label>Educational Qualification of Parent<span>*</span> <input type='text' id='pred'/></label>
+            <br/>
+            
+            <h3>Parent/Guardian Details</h3>
+            <label>First Name<input type='text'/></label>
+            <label>Middle Name<input type='text'/></label>
+            <label>Last Name<input type='text'/></label>
+            <br/>
+            <label>Email Id <input type='text'/>@<input type='text'></label> 
+            <br/>
+            <label>Educational Qualification of Parent <input type='text'/></label>
+            <br/>
+
+            <h3>Educational Qualifications of the user</h3>
+            <label>Name of the School(10th)<span>*</span> <input type='text' id='10th_name'/></label>
+            <label>Register Number<span>*</span> <input type='text'  id='10th_num'/></label>
+            <label>Grade/Marks<span>*</span> <input type='text' id='10th_grade'/></label>
+            <br/>
+            <label>Name of the School(12th)<span>*</span> <input type='text' id='12th_name'/></label>
+            <label>Register Number<span>*</span> <input type='text' id='12th_num'/></label>
+            <label>Grade/Marks<span>*</span> <input type='text' id='12th_grade'/></label>
+            <br/>
+
+            <label>Age<span>*</span> <input type='number' id='age'></label>
+            <br/>
+            <label>Sex<span>*</span> <input type='radio' id='male'/>Male <input type='radio' id='female'/> Female <input type='radio' id='not_specified'/>Not specified</label>
+            <br/>
+            <label>Date of birth<span>*</span> <input type='date' id='date'/></label>
+            <label>Religion<span>*</span> <select id='religion'></select></label>
+            <label>Nationality<span>*</span><select id='nationality'></select></label>
+            <br/>
+            <label>Identification marks <input type='text' class="address"/></label>
+            <br/>
+            <div class="submit"> 
+            <input type='submit' class="submit-button" onclick="validate()"/>
+        </div>
+
+
+        </form>
+    </body>
+    </html>
