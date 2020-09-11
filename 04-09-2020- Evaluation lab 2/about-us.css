@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color:aliceblue;
+
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  
+.about-section {
+    padding: 20px;
+    text-align: center;
+    background-color: crimson;
+    color: white;
+  }

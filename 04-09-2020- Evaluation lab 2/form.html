@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>
+            HTML Form
+        </title>
+        <link rel="stylesheet" href='form.css'/>
+        <script src="form.js"></script>
+    </head>
+    <body>
+        <form>
+            <h1>Admission Form</h1>
+            <h3>User Details</h3>
+            <label>First Name <span>*</span><input type='text' id='firstname'/></label>
+            <label>Middle Name<input type='text'/></label>
+            <label>Last Name <span>*</span><input type='text' id='lastname'/></label>
+            <br/>
+            <br/>
+
+            <label>Preferred Username <span>*</span><input type='text' id='username' placeholder="alphanumeric"/></label>
+            <br/>
+            <br/>
+            
+            <label>Date of birth<span>*</span> <input type='date' id='date'/></label>
+            <br>
+            <br>
+
+            <label>Contact no <span>*</span>
+
+                <select name="country_code" id="country_code" onclick="add_codes()">
+                  <option value="country_code">Country code</option>
+                </select>
+            <input type='number' id='contact'></label>
+            <br>
+            <br>
+
+            <label>Sex
+                <label for="male"> <input type="radio" id="male" name="gender" value="male"  class='gender'>Male</label>
+                <input type="radio" id="female" name="gender" value="female"  class='gender'>Female</label>
+                <input type="radio" id="not_specified" name="gender" value="not specified"  class='gender'>Not specified</label>
+            </label>
+            <br>
+            <br>
+
+            <h3>Mark Details</h3>
+            <label>Maximum marks<span>*</span> <input type='number' id='max_marks'></label>
+            <br>
+            <br>
+
+            <label>Physics<span>*</span> <input type='number' id='physics'/></label>
+            <br>
+            <br>
+
+            <label>Chemistry<span>*</span> <input type='number' id='chemistry'/></label>
+            <br>
+            <br>
+
+            <select required>
+                <option>Engineering (Maths)</option>
+                <option>Medical (Biology)</option>
+            </select>
+            <input id='stream_marks'/>
+            <div class="submit"> 
+            <input type='submit' class="submit-button" onclick="validate()"/>
+        </div>
+
+
+        </form>
+    </body>
+    </html>

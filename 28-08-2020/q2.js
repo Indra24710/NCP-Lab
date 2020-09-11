@@ -111,7 +111,6 @@ function validate(){
         if (s==''){
             alert('invalid email id');
             return;
-
         } 
     }else{
 
